@@ -1,0 +1,136 @@
+DAY-1:
+======
+
+	HTML:Hyper text markup language 
+
+
+
+static web pages :HTML
+				.html
+				<html>
+dynamic
+
+
+Registration Page 
+
+username
+password
+cpassword
+
+gender
+languages known....
+file
+submit .....
+
+	
+	form tags 
+	
+		<form>
+		<input type="text" name="xyz" id="sleepping">
+		
+		
+		
+		</form>
+
+https://www.w3schools.com/html/default.asp
+
+
+
+CSS:
+	Cascading style sheet
+							3
+	
+	1)inline
+	2)internal
+	3)external
+
+
+			
+SYntax:
+
+		selector{propname:propvalue;propname:propvalue;.....}
+
+
+
+		1)id selector			#
+		2)class selector		.
+		3)element selector		h1
+		4)group slector			h1,h2,p
+		5)all selector			*
+		
+		
+	Bootstrap	 
+		
+		CDN
+		
+		
+		JS	:1)we can change html content
+			 2)we can change style html
+			 3)we can apply front end validation
+			 
+			-->OOPS	
+		
+		TS
+		
+		
+	1)inline JS		<body><scirpt>
+	2)internal JS	<head><scirpt>
+	3)external JS	.js
+
+		
+		myfunctions.js
+		
+		<script src ="myfunctions.js" ></script>
+		
+		<script src ="react.js" ></script>		
+		
+	
+variables
+		var/let/const	age=33
+	
+		
+		var-->function scope
+		let-->block scope
+		const-->block scope ,fixed 
+		
+		
+			var  name="dell";
+			
+			
+			
+			local variable
+			global variable
+			
+			
+		function printAdd(a,b)
+		{
+			var result=a+b;
+			document.write("Add of two numbers: "+result)
+			console.log("Add of two numbers in console: "+result)
+			alert("welcome to javascript")
+		}		
+			
+			
+	BASIC		
+			
+	Arrays
+	Events
+	Object	
+	String 	
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
