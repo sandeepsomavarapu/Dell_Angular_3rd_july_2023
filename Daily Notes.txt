@@ -119,18 +119,57 @@ variables
 	String 	
 			
 			
+			LOGIN FORM
 			
+			USERNAME
 			
+			PASSWORD
 			
+						submit
+		
+		ECMA SCRIPT--->jscript-->ES2015 or ES6
+		
+		username="dell" password="dellindia"
+		
+	alert	login sucess
+		
+	alert	enter valid credntials
 		
 		
 		
+TypeScript:
+==============
+
+		TypeScript=JS+Types
+
+js
+	var name="dell";//dynamic typed programming
+	
+		name=123;
+		name=true;
+
+ts
+	var name:string="dell"; static typed 
+
+			name=123;//invalid
+
+
+
+
+		function display(a:number):string
+		{
 		
+		}
+
+
 		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+	
 		
 		
