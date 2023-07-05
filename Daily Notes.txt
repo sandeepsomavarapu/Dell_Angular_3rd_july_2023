@@ -162,14 +162,63 @@ ts
 		}
 
 
-		
+Angular:-Google
+=========
+angualarjs-->JS
 
+angular2-->TS
 
+		SPA/MPA
 
+		Component-->APP-->building block webapp
 
+		MVC
 
-
-
+	Angular 	two way data binding
 	
+	React-->VIEW  VIRTUAL DOM
+	
+	
+	MERN-->
+	MEAN
+	
+	
+	
+	@Component({
+  selector: 'dell',
+  template: `
+    <h1>welcome to angularIO</h1>
+  `,
+  styles: [`h1{
+    color:red;
+    background-color:yellow
+  }`]
+})
+export class AppComponent {
+  orgName:string="Dell India"
+}
+
+	  ng generate component login --skip-tests true
+	  
+	  ng g c login/forgotpassword --skip-tests true  (creation of nested component)
+	 
+	  ng g c register    
 		
+		
+		
+	  <p>{{12+13>20}}</p>
+  <p>{{"qwerty"+"india"}}</p>
+  
+  
+    emp:any[];
+  constructor() {
+    this.emp=[
+      {empcode:'emp101',name:"akash",dateOfBirth:'10/11/1993',gender:"male",sal:12000.123},
+     {empcode:'emp102',name:"pranay" ,dateOfBirth:'08/23/1990',gender:"male",sal:22000.123},
+    {empcode:'emp103',name:"srikanth", dateOfBirth:'06/11/1991',gender:"male", sal:32000.121},
+    {empcode:'emp104',name:"deepa" ,dateOfBirth:'07/15/1988',gender:"female",sal:42000.900},
+    {empcode:'emp105',name:"ramya" ,dateOfBirth:'06/19/1993',gender:"female",sal:200000.63125}
+      ];
+   }
+
 		
