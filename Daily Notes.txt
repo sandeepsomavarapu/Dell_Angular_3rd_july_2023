@@ -221,7 +221,7 @@ export class AppComponent {
       ];
    }
 
-
+		
 <html>
     <head>
 
@@ -251,4 +251,51 @@ export class AppComponent {
 
 </html>
 
-		
+
+
+Pipes:
+=======
+filtering / tranform
+
+		| pipename
+
+	predefined 			userdefined/custom pipe 
+
+
+PipeTransform
+@Pipe
+{
+	'gender'
+}
+
+class GenderPipe implements PipeTransform
+
+	tranform
+
+
+ng generate pipe gender
+
+	2 files
+	
+	ts
+	spec.ts
+
+
+https://angular.io/guide/pipes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
