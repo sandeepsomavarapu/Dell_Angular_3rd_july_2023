@@ -221,4 +221,34 @@ export class AppComponent {
       ];
    }
 
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>Employees Info:</h3>
+        <table class="table table-dark table-striped">
+            <tr>
+                <th>EmpId</th>
+                <th>EmpName</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+            <tr *ngFor="let emp of emps">
+                <td>{{emp.empcode}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.dateOfBirth}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.sal}}</td>
+            </tr>
+            <tr *ngIf="emps.length==0">
+                <td>NO Employees Info TO Display</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+
 		
