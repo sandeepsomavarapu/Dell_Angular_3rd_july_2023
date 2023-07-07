@@ -326,8 +326,105 @@ Angular Forms:
 
 
 
+Life Cycle Hooks:
+================
+	Life cycle hooks are events which are ocurred during life cycle of a component
+
+Component-->intialization  to destruction
 
 
+interfaces
+
+interface -->implements
+
+
+				oninit(optional)
+				ngoninit
+				
+constructor(DI):called before any hook to inject dependency
+
+ngOnChanges:called after a bound input property changes
+ngOnInit:called once the component is intialized
+ngDoCheck:called during every change detection run
+ngAfterContentInit:called after the ng-content is projected to the view 
+ngAfterContentChecked
+ngAfterViewInit
+ngAfterViewInitChecked
+ngOnDestroy		called once the component is about to destroy 
+
+
+
+Component Communication:
+=========================
+
+Parent To Child:
+===================
+app.componet.ts
+
+export class AppComponent {
+  username: string = "Dell India";
+}
+
+app.component.html
+
+<child  [uname]="username" > </child>
+
+
+child.component.ts
+
+export class ChildComponent {
+  @Input()
+  uname: string;
+  }
+  
+child.componet.html
+<p>In Child, The Data From Parent is:{{uname}}</p>  
+
+
+Child To Parent:
+===================
+child.component.ts
+
+export class ChildComponent {
+  @Input()
+  uname: string;
+  
+  @Output()
+  notify: EventEmitter<string> = new EventEmitter<string>();
+  passData() {
+    this.notify.emit("Rps Consulting");
+  }
+}
+
+child.component.html
+
+<div>
+<p>In Child, The Data From Parent is:{{uname}}</p>
+<button (click)="passData()">Send Data To Parent</button>
+</div>
+
+
+
+
+
+app.componet.ts
+
+export class AppComponent {
+  username: string = "Dell India";
+  childData: string;
+  parentMethod(cdata) {
+    this.childData = cdata
+  }
+}
+
+app.component.html
+
+<div>
+  <h1>Parent Component--Root Component</h1>
+  <h1>Child Data:{{childData}}</h1>
+  <child  [uname]="username" (notify)="parentMethod($event)"> </child>
+
+</div>
 
 
 
