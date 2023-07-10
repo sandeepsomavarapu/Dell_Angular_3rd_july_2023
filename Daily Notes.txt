@@ -427,6 +427,47 @@ app.component.html
 </div>
 
 
+ng g s servicename
+
+
+
+
+@Injectable
+
+HttpClient--get,post,put,delete
+
+JSON:
+		Router.navigate 
+		
+		
+
+		router.navigate(['/users',this.userid])
+		router.navigate(['/users',{id:this.userid,name:this.username}])
+			
+			activatedroute.snapshot.paramMap.get('id')
+router.navigate(['/users'],{queryParams:{eid:123,ename:"sandeep"}});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
