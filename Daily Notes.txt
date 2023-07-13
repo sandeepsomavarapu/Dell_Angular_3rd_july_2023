@@ -452,22 +452,122 @@ router.navigate(['/users'],{queryParams:{eid:123,ename:"sandeep"}});
 
 
 
+https://angular.io/api/router/Params
+
+Matrix and Query Params 	
 
 
 
 
+CanActivate	:checks to see if a user can visit the route 
+canActivateChild
+CanDeactivate
+Resolve
+canMatch
+canLoad.....
 
 
 
 
+ng generate guard
+					guardname
+					canactivate
+
+	path:"users",component:UsersComponent,canactivate
 
 
 
 
+Angular Forms:
+=============
+
+	TDF		
+					1)import FormsModule  in app.module.ts (imports)
+			
+					2)ngForm(name of form),ngModel template variable #userform
+					
+					Validations
+		
+	
+	RF(Model driven forms/dynamic forms)
+	
+
+					1)import ReactiveFormsModule  in app.module.ts (imports)
+			
+					2)formGroup,formControlName
+
+
+			FormGroup
+			FormControl...
+
+
+Field related state
+
+	untouched :the field has not touched yet
+	touched :the field has been  touched 
+	pristine :the field has not modified yet 
+	dirty :the field has been modified  
+	invalid:the field content is not valid
+	valid:the field content is  valid
+	
+Form related state
+
+	pristine :no fields has not modified yet 
+	dirty :one or more has been modified  
+	invalid:the form content is not valid
+	valid:the fomr content is  valid
+	submitted: the form submitted
 
 
 
 
+Validators
+
+
+
+
+Lazy Loading:
+============
+* By default angular modules are eagerly loaded 
+
+		loadChildren
+
+
+const routes: Routes = [
+  {
+    path: 'items',
+    loadChildren: () => import('./items/items.module').then(m => m.ItemsModule)
+  }
+];
+
+
+
+
+Component directives
+
+structural directives		*ngIf,*ngFor.....
+
+attribute directives 
+
+
+
+Case Study:
+=============Bootstrap
+		databinding -->{{}},(ngSubmit),[]
+		directives
+		lazy loading
+		forms(TDF,MDF--->including)
+		routing,@input,@output,EventEmiiter
+		authguards
+		storage(ls,ss)
+		pipes
+		json-server
+		services(HttpClient)
+
+
+	Login,Registration
+
+Bank Application
 
 
 
