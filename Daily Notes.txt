@@ -547,7 +547,45 @@ Component directives
 
 structural directives		*ngIf,*ngFor.....
 
-attribute directives 
+attribute directives 		[ngStyle] [ngClass]
+	
+
+NGRX
+Security
+
+
+
+
+Inbuild 
+
+	required ,minlength,maxlength,email....predefined 
+
+FormGroup
+({
+uname:['',[Validators.required,Validators.maxLength(10),passValidate]]
+
+
+
+
+})
+
+
+	
+Custom validator
+
+password 
+
+passValidate(ref)
+{
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -571,6 +609,100 @@ Bank Application
 
 
 
+	style="color:red"
 
 
+firebase 
+
+
+npm install -g firebase-tools
+
+
+LOgin https://console.firebase.google.com/u/0/?pli=1
+
+firebase init hosting
+
+Animations & Transition:
+======================
+	BrowserAnimationsModule -->from 'angular/platform-browser/animations'
+
+
+
+
+app.component.ts
+
+
+@Component
+{
+selector
+templateUrl
+styleUrl
+animations:[
+
+
+
+]
+
+
+}
+
+to register animation -->trigger()
+
+			name of animation
+			array of metadata
+
+transition ()-->when the animation should start...
+style()
+animate()
+
+:enter
+:leave
+
+animations:[
+trigger('fade',[
+transition (':enter',[
+style({...}),
+animate(1000,style({....}))
+
+
+]),
+transition (':leave',[
+style({...})
+animate(1000,style({....}))
+])
+
+]
+)
+
+
+animate()
+
+
+]
+
+
+@triggername 
+
+
+
+https://angular.io/guide/animations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=xSqETCJtT2M&list=PLOa5YIicjJ-XalPcuhk2suHU0l84UdRc6
 
